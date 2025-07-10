@@ -1,230 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flashcards Estudos</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards Estudos - Exatas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="cabecalho">
-    <div class="titulo">
-      <h2>Notas rápidas de estudos</h2>
-    </div>
-    <div class="mudar">
-      <h2>(MUDAR TODO TEXTO QUE ESTIVER EM VERMELHO)</h2>
-    </div>
-    <p>
-      Este é um projeto desenvolvido pensando numa ferramenta de estudos. O
-      intuito é elaborar e organizar um mecanismo de notas, ou uma ferramenta
-      que organize um pequeno resumo dos temas.
-    </p>
-    <p>
-      O grid de cards está organizado em uma matriz de 3x3, podendo ser
-      expandido ou reduzido a matrizes de tamanhos menores.
-    </p>
-  </header>
-
-  <main>
-    <section id="container">
-      <!-- CARTÃO 1 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo1">
-            <div class="cartao1">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 1</h3>
-                </div>
-                <div class="cartao-conteudo-pergunta">pergunta 1</div>
-                <div class="cartao-conteudo-resposta">resposta 1</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo do cartão 1</h3>
-                <p>conteúdo do verso</p>
-              </div>
-            </div>
-          </div>
+    <header class="cabecalho">
+        <div class="titulo">
+            <h2>Notas para estudar</h2>
         </div>
-      </article>
+        <p>Objetivo de ajudar a se organizar nos estudos</p>
+        <p></p>
+    </header>
+    <main>
+        <section id="container">
 
-      <!-- CARTÃO 2 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo2">
-            <div class="cartao2">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 2</h3>
+            <!-- Matemática -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo1">
+                        <div class="cartao1">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Matemática</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Qual é a fórmula de Bhaskara?</div>
+                                <div class="cartao-conteudo-resposta">x = (-b ± √(b² - 4ac)) / 2a</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 1</h3>
+                                <p>Usada para resolver equações do 2º grau. Depende dos coeficientes a, b e c.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 2</div>
-                <div class="cartao-conteudo-resposta">resposta 2</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo</h3>
-                <p>Conteúdo atrás do cartão</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- CARTÃO 3 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo3">
-            <div class="cartao3">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 3</h3>
+            <!-- Física -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo2">
+                        <div class="cartao2">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Física</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">O que diz a 1ª Lei de Newton?</div>
+                                <div class="cartao-conteudo-resposta">Um corpo tende a manter seu estado de repouso ou movimento, se não houver força resultante.</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 2</h3>
+                                <p>Conhecida como Lei da Inércia, define o comportamento dos corpos sem forças atuantes.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 3</div>
-                <div class="cartao-conteudo-resposta">resposta 3</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo cartão 3</h3>
-                <p>conteúdo do resumo do cartão 3</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- CARTÃO 4 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo4">
-            <div class="cartao4">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 4</h3>
+            <!-- Química -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo3">
+                        <div class="cartao3">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Química</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Qual é o pH de uma solução neutra?</div>
+                                <div class="cartao-conteudo-resposta">pH = 7</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 3</h3>
+                                <p>Soluções neutras têm pH 7, como a água pura. pH menor indica acidez, maior indica basicidade.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 4</div>
-                <div class="cartao-conteudo-resposta">resposta 4</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo do cartão 4</h3>
-                <p>conteúdo do verso 4</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- CARTÃO 5 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo5">
-            <div class="cartao5">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 5</h3>
+            <!-- Matemática -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo4">
+                        <div class="cartao4">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Matemática</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Como se calcula a área de um triângulo?</div>
+                                <div class="cartao-conteudo-resposta">Área = (base × altura) / 2</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 4</h3>
+                                <p>A fórmula vale para qualquer triângulo com base e altura conhecidas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 5</div>
-                <div class="cartao-conteudo-resposta">resposta 5</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo do cartão 5</h3>
-                <p>conteúdo do verso</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- CARTÃO 6 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo6">
-            <div class="cartao6">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 6</h3>
+            <!-- Física -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo5">
+                        <div class="cartao5">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Física</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Qual é a fórmula da velocidade média?</div>
+                                <div class="cartao-conteudo-resposta">Vm = Δs / Δt</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 5</h3>
+                                <p>Velocidade média é a razão entre deslocamento (Δs) e o tempo (Δt).</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 6</div>
-                <div class="cartao-conteudo-resposta">resposta 6</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo do cartão 6</h3>
-                <p>conteúdo do verso 6</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- CARTÃO 7 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo7">
-            <div class="cartao7">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 7</h3>
+            <!-- Química -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo6">
+                        <div class="cartao6">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Química</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Qual é a fórmula da água?</div>
+                                <div class="cartao-conteudo-resposta">H₂O</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 6</h3>
+                                <p>A água é composta por dois átomos de hidrogênio e um de oxigênio.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 7</div>
-                <div class="cartao-conteudo-resposta">resposta 7</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo do cartão 7</h3>
-                <p>conteúdo do verso 7</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- CARTÃO 8 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo8">
-            <div class="cartao8">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 8</h3>
+            <!-- Matemática -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo7">
+                        <div class="cartao7">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Matemática</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">O que é uma função do 1º grau?</div>
+                                <div class="cartao-conteudo-resposta">f(x) = ax + b</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 7</h3>
+                                <p>Função cuja representação gráfica é uma reta. "a" é o coeficiente angular, "b" é o linear.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 8</div>
-                <div class="cartao-conteudo-resposta">resposta ?</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo do cartão 8</h3>
-                <p>conteúdo do verso ?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+            </article>
 
-      <!-- CARTÃO 9 -->
-      <article class="cartao" onclick="this.classList.toggle('flipped')">
-        <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo9">
-            <div class="cartao9">
-              <div class="card-front">
-                <div class="design-conteudo">
-                  <h3>conteúdo 9</h3>
+            <!-- Física -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo8">
+                        <div class="cartao8">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Física</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">O que é energia cinética?</div>
+                                <div class="cartao-conteudo-resposta">Ec = (mv²)/2</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 8</h3>
+                                <p>Energia relacionada ao movimento. Depende da massa e da velocidade do corpo.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 9</div>
-                <div class="cartao-conteudo-resposta">resposta 9</div>
-              </div>
-              <div class="card-back">
-                <h3>Resumo do cartão 9</h3>
-                <p>conteúdo do verso 9</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
+            </article>
 
-  <footer>
-    <div class="footer-text">
-      <a class="texto-rodape">Projeto desenvolvido pela Alura. Melhorado e aplicado por Rafael K.T Nakatsuchi</a>
-    </div>
-    <div class="mark">
-      <a href="https://github.com/RafaNaka33">2025 | @RafaNaka</a>
-    </div>
-  </footer>
+            <!-- Química -->
+            <article class="cartao" onclick="this.classList.toggle('flipped')">
+                <div class="geral">
+                    <div class="cartao-conteudo cartao-conteudo9">
+                        <div class="cartao9">
+                            <div class="card-front">
+                                <div class="design-conteudo">
+                                    <h3>Química</h3>
+                                </div>
+                                <div class="cartao-conteudo-pergunta">Qual é a diferença entre átomo e molécula?</div>
+                                <div class="cartao-conteudo-resposta">Átomo é a menor unidade da matéria, molécula é um conjunto de átomos ligados.</div>
+                            </div>
+                            <div class="card-back">
+                                <h3>Resumo do cartão 9</h3>
+                                <p>Átomo: unidade básica. Molécula: união de dois ou mais átomos por ligações químicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <a class="texto-rodape">Projeto desenvolvido pela Alura. Melhorado por Eduardo Dabino Leal</a>
+        </div>
+        <div class="mark">
+            <a href="https://github.com/RafaNaka33">2025 | @eduardodabino</a>
+        </div>
+    </footer>
 </body>
 </html>
