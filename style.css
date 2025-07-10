@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #fffceb;
+  --secondary-color: #b8e6e7;
+  --text-color: #000000;
+  --link-color: #4f05fc;
+  --background-color: #ffffff;
+  --button-hover-color: #c504ff;
+  --font-body: "Chocolate Classical Sans", serif;
+  --font-titulo: "Rakkas", serif;
+}
+
+body {
+  background-image: url("img/library-background.jpg");
+  font-family: var(--font-body);
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.cabecalho {
+  padding: 5px;
+  background-color: rgba(120, 228, 255, 0.822);
+  border-radius: 10px;
+  font-size: 2vw;
+}
+
+.mudar {
+  color: red;
+  text-decoration: line-through;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.cabecalho p {
+  color: #c94e4e;
+  text-decoration: line-through;
+}
+
+/* ------------------- CARTÕES ------------------- */
+
+.cartao {
+  color: red;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  margin-top: 20px;
+  max-width: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575));
+}
+
+.cartao1 { background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575)); }
+.cartao2 { background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.568)); }
+.cartao3 { background: linear-gradient(to bottom, rgb(1, 255, 242), rgba(88, 169, 235, 0.61)); }
+.cartao4 { background: linear-gradient(to bottom, rgb(0, 247, 255), rgba(88, 169, 235, 0.603)); }
+.cartao5 { background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.548)); }
+.cartao6 { background: linear-gradient(to bottom, rgb(0, 255, 234), rgba(88, 169, 235, 0.555)); }
+.cartao7 { background: linear-gradient(to bottom, rgb(2, 225, 255), rgba(88, 169, 235, 0.582)); }
+.cartao8 { background: linear-gradient(to bottom, rgb(3, 247, 255), rgba(125, 96, 192, 0.568)); }
+.cartao9 { background: linear-gradient(to bottom, rgb(1, 255, 255), rgba(88, 169, 235, 0.596)); }
+
+/* ------------------- FLIP ------------------- */
+
+.cartao.flipped .cartao1,
+.cartao.flipped .cartao2,
+.cartao.flipped .cartao3,
+.cartao.flipped .cartao4,
+.cartao.flipped .cartao5,
+.cartao.flipped .cartao6,
+.cartao.flipped .cartao7,
+.cartao.flipped .cartao8,
+.cartao.flipped .cartao9 {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  text-align: left;
+  font-size: 2vw;
+}
+
+.card-front {
+  word-wrap: break-word;
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  text-decoration: underline;
+  overflow: hidden;
+  word-wrap: break-word;
+  line-height: 20px;
+  font-size: 15px;
+  justify-content: flex-start;
+}
+
+/* ------------------- OUTROS ------------------- */
+
+.design-conteudo {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+footer {
+  padding: 5px;
+  background-color: #000000;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.texto-rodape {
+  color: #ffffff;
+}
+
+.mark a {
+  color: aqua;
+}
+
+.mark a:hover {
+  color: deepskyblue;
+}
